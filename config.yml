@@ -1,0 +1,16 @@
+# Secrets in cluster
+api_keys:
+  slack: "${SLACK_TOKEN}"
+  opsgenie: "${OPSGENIE_TOKEN}"
+
+# It changes responsible users according to desired `schedules` for each Slack group `name` (e.g. @mygroup)
+# Fires `update_message` to `channels` on change
+
+schedules: # one or more Opsgenie schedules
+  - name: "MySchedule" # Opsgenie schedule name
+    slackUserGroup: "myusergroup" # name of the Slack user group to update
+    updateMessage:
+      # 1st parameter is slack user group, the second parameter is slack username
+      message: " On duty for L1: %s"
+      channels:
+        - "my-slack-channel"

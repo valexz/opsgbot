@@ -1,0 +1,6 @@
+/opsgbot
+/outputs
+/dist
+.secret.yml
+.secrets.env
+**/.idea
