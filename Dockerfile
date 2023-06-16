@@ -15,7 +15,7 @@ RUN go get -d -v
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags="-w -s" -o /go/bin/opsgbot
 
 # distributable image
-FROM alpine:3.17
+FROM alpine:3.17.4
 
 # copy dependencies
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
