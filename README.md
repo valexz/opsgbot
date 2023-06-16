@@ -2,7 +2,7 @@
 
 Update your Slack user groups based on your Opsgenie Schedules.
 
-Based on a fork of https://github.com/karlkfi/pagerbot,
+Based on https://github.com/karlkfi/pagerbot,
 which is a fork of https://github.com/goodeggs/pagerbot,
 which is a fork of https://github.com/YoSmudge/pagerbot.
 
